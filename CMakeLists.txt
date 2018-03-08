@@ -5,7 +5,8 @@ option(test "Build all tests." ON)
 set(PROJECT_NAME stl_workshop)
 project(${PROJECT_NAME})
 
-set(CMAKE_CXX_FLAGS "-g -Wall")
+set(CMAKE_CXX_FLAGS "-g -Wall -Werror -Wno-missing-braces")
+set(CMAKE_CXX_STANDARD 14)
 
 # force static runtime libraries for msvc builds
 if(MSVC)
