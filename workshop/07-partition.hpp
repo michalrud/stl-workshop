@@ -1,5 +1,4 @@
 #pragma once
-#include <cassert>
 
 template <typename T>
 void moveOddToBeginning(T& container)
