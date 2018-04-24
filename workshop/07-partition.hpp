@@ -4,7 +4,7 @@ template <typename T>
 void moveOddToBeginning(T& container)
 {
 	auto it = container.begin();
-	for (int i = 0; i < container.size() - 1; ++i, ++it)
+	for (std::size_t i = 0; i < container.size() - 1; ++i, ++it)
 	{
 		if (*it % 2 != 1)  // not odd
 		{

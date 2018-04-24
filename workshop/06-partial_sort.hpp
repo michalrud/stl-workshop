@@ -2,13 +2,13 @@
 #include <cassert>
 
 template <typename T>
-void myPartialSort(T& container, int n)
+void myPartialSort(T& container, std::size_t n)
 {
 	assert(n <= container.size());
 	do
 	{
 		auto it = container.begin();
-		for (int i = 0; i < n-1; ++i)
+		for (std::size_t i = 0; i < n-1; ++i)
 		{
 			auto it2 = it;
 			++it2;
