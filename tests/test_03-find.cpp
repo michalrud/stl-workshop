@@ -9,5 +9,5 @@ TYPED_TEST(ContainerTypedTests, FindDivisableBy4_Found) {
 
 TYPED_TEST(ContainerTypedTests, FindDivisableBy4_NotFound) {
 	typename TestFixture::ContainerType actual{3, 7, 6, 15};
-	EXPECT_EQ(findDivisableByFour(actual), actual.end());
+	EXPECT_TRUE(findDivisableByFour(actual) == actual.end());
 }
