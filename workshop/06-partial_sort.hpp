@@ -5,10 +5,11 @@ template <typename T>
 void myPartialSort(T& container, std::size_t n)
 {
 	assert(n <= container.size());
+	if (n == 0) return;
 	do
 	{
 		auto it = container.begin();
-		for (std::size_t i = 0; i < n-1; ++i)
+		for (std::size_t i = 0; i+1 < n; ++i)
 		{
 			auto it2 = it;
 			++it2;
